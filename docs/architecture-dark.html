@@ -1,58 +1,74 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>GD32 board architecture</title><link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&amp;family=Geist:wght@400;600&amp;family=Geist+Mono:wght@400;500&amp;display=swap" rel="stylesheet"><style>*{box-sizing:border-box}body{margin:0;padding:24px;background:#2d3142;color:#f5f5f5;font-family:Geist,Arial,sans-serif}main{max-width:1120px;margin:auto}.diagram-container{width:100%;overflow-x:auto}svg{display:block;width:100%;min-width:960px}h1{font-family:'Instrument Serif',Georgia,serif;font-weight:400}p{line-height:1.6}@media print{svg{min-width:0}.diagram-container{overflow-x:visible}}</style></head><body><main><div class="diagram-container"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-labelledby="architecture-dark-title architecture-dark-desc">
-<title id="architecture-dark-title">GD32 board architecture</title>
-<desc id="architecture-dark-desc">Functional blocks from the supplied schematic and bill of materials.</desc>
-<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#bfc0c0"/></marker></defs>
-<rect x="0" y="0" width="960" height="600" fill="#2d3142"/>
-<text x="40" y="48" font-family="Instrument Serif, Georgia, serif" font-size="28" fill="#f5f5f5">GD32 board architecture</text>
-<text x="40" y="76" font-family="Geist, Arial, sans-serif" font-size="11" fill="#bfc0c0">Functional blocks from the supplied schematic and bill of materials.</text>
-<path d="M 264,168 H 352" fill="none" stroke="#bfc0c0" stroke-width="1.6" marker-end="url(#arrow)"/>
-<path d="M 464,208 V 312" fill="none" stroke="#bfc0c0" stroke-width="1.6" marker-end="url(#arrow)"/>
-<path d="M 264,352 H 352" fill="none" stroke="#bfc0c0" stroke-width="1.6" marker-end="url(#arrow)"/>
-<path d="M 576,352 H 688" fill="none" stroke="#bfc0c0" stroke-width="1.6" marker-end="url(#arrow)"/>
-<path d="M 152,456 V 424 Q 152,416 160,416 H 408 Q 416,416 416,408 V 392" fill="none" stroke="#bfc0c0" stroke-width="1.6" marker-end="url(#arrow)"/>
-<path d="M 496,456 V 392" fill="none" stroke="#bfc0c0" stroke-width="1.6" marker-end="url(#arrow)"/>
-<path d="M 576,376 H 632 Q 640,376 640,384 V 480 Q 640,488 648,488 H 688" fill="none" stroke="#bfc0c0" stroke-width="1.6" marker-end="url(#arrow)"/>
-<g data-node="USB-C power"><rect x="40" y="128" width="224" height="80" rx="6" fill="#2d3142" stroke="#bfc0c0" stroke-width="1.1"/>
-<text x="56" y="146" fill="#bfc0c0" font-family="Geist Mono, Consolas, monospace" font-size="8" letter-spacing="1">INPUT</text>
-<text x="56" y="168" fill="#f5f5f5" font-family="Geist, Arial, sans-serif" font-weight="600" font-size="12">USB-C power</text>
-<text x="56" y="186" fill="#bfc0c0" font-family="Geist Mono, Consolas, monospace" font-size="9">5 V input</text>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Sense. Process. Display.</title><link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&amp;family=Geist:wght@400;600&amp;family=Geist+Mono:wght@400;500&amp;display=swap" rel="stylesheet"><style>*{box-sizing:border-box}body{margin:0;padding:24px;background:#2d3142;color:#f5f5f5;font-family:Geist,Arial,sans-serif}main{max-width:1280px;margin:auto;min-width:0}.diagram-container{width:100%;overflow-x:auto}svg{display:block;width:100%;min-width:1280px}p{max-width:75ch;line-height:1.6}@media print{svg{min-width:0}.diagram-container{overflow:visible}}</style></head><body><main><div class="diagram-container"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-labelledby="architecture-dark-title architecture-dark-desc">
+<title id="architecture-dark-title">Sense. Process. Display.</title>
+<desc id="architecture-dark-desc">A temperature and humidity board built around the GD32E230C8T6.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#bfc0c0"/></marker><pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="12" cy="12" r="0.7" fill="#687080" opacity="0.45"/></pattern></defs>
+<rect x="0" y="0" width="1280" height="720" rx="0" fill="#2d3142" stroke="#2d3142" />
+<rect x="24" y="180" width="1232" height="440" rx="0" fill="url(#dots)" stroke="none" />
+<text x="48" y="40" font-family="Geist Mono, Consolas, monospace" font-size="12" font-weight="400" fill="#bfc0c0">HARDWARE / GD32</text>
+<text x="48" y="100" font-family="Instrument Serif, Georgia, serif" font-size="40" font-weight="400" fill="#f5f5f5">Sense. Process. Display.</text>
+<text x="48" y="140" font-family="Geist, Arial, sans-serif" font-size="16" font-weight="400" fill="#bfc0c0">A temperature and humidity board built around the GD32E230C8T6.</text>
+<path d="M 48 168 H 1232" fill="none" stroke="#687080" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 328 284 H 384 Q 392 284 392 292 V 332 Q 392 340 400 340 H 448" fill="none" stroke="#bfc0c0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M 328 488 H 384 Q 392 488 392 480 V 452 Q 392 444 400 444 H 448" fill="none" stroke="#bfc0c0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M 768 340 H 824 Q 832 340 832 332 V 300 Q 832 292 840 292 H 888" fill="none" stroke="#bfc0c0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M 768 444 H 824 Q 832 444 832 452 V 488 Q 832 496 840 496 H 888" fill="none" stroke="#bfc0c0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<g data-node="USB-C + ME6211">
+<rect x="48" y="212" width="280" height="144" rx="6" fill="#2d3142" stroke="#bfc0c0" stroke-width="1.5"/>
+<text x="72" y="244" font-family="Geist, Arial, sans-serif" font-size="16" font-weight="600" fill="#f5f5f5">USB-C + ME6211</text>
+<text x="72" y="268" font-family="Geist Mono, Consolas, monospace" font-size="12" font-weight="400" fill="#bfc0c0">5 V input → 3.3 V rail</text>
+<path d="M 196.0 290 L 176.0 318.0 H 192.0 L 180.0 338 L 208.0 310.0 H 192.0 Z" fill="none" stroke="#bfc0c0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 88 314.0 H 152.0 M 232.0 314.0 H 288" fill="none" stroke="#bfc0c0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 </g>
-<g data-node="ME6211 regulator"><rect x="352" y="128" width="224" height="80" rx="6" fill="#2d3142" stroke="#bfc0c0" stroke-width="1.1"/>
-<text x="368" y="146" fill="#bfc0c0" font-family="Geist Mono, Consolas, monospace" font-size="8" letter-spacing="1">POWER</text>
-<text x="368" y="168" fill="#f5f5f5" font-family="Geist, Arial, sans-serif" font-weight="600" font-size="12">ME6211 regulator</text>
-<text x="368" y="186" fill="#bfc0c0" font-family="Geist Mono, Consolas, monospace" font-size="9">3.3 V rail</text>
+<g data-node="AHT20 sensor">
+<rect x="48" y="416" width="280" height="144" rx="6" fill="#2d3142" stroke="#bfc0c0" stroke-width="1.5"/>
+<text x="72" y="448" font-family="Geist, Arial, sans-serif" font-size="16" font-weight="600" fill="#f5f5f5">AHT20 sensor</text>
+<text x="72" y="472" font-family="Geist Mono, Consolas, monospace" font-size="12" font-weight="400" fill="#bfc0c0">Temperature + humidity</text>
+<rect x="168.0" y="498.0" width="40" height="40" rx="4" fill="#2d3142" stroke="#bfc0c0" />
+<path d="M 158.0 504.6666666666667 H 168.0 M 208.0 504.6666666666667 H 218.0 M 174.66666666666666 488.0 V 498.0 M 174.66666666666666 538.0 V 548.0" fill="none" stroke="#bfc0c0" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 158.0 511.3333333333333 H 168.0 M 208.0 511.3333333333333 H 218.0 M 181.33333333333334 488.0 V 498.0 M 181.33333333333334 538.0 V 548.0" fill="none" stroke="#bfc0c0" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 158.0 518.0 H 168.0 M 208.0 518.0 H 218.0 M 188.0 488.0 V 498.0 M 188.0 538.0 V 548.0" fill="none" stroke="#bfc0c0" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 158.0 524.6666666666666 H 168.0 M 208.0 524.6666666666666 H 218.0 M 194.66666666666666 488.0 V 498.0 M 194.66666666666666 538.0 V 548.0" fill="none" stroke="#bfc0c0" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 158.0 531.3333333333334 H 168.0 M 208.0 531.3333333333334 H 218.0 M 201.33333333333334 488.0 V 498.0 M 201.33333333333334 538.0 V 548.0" fill="none" stroke="#bfc0c0" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+<rect x="180.0" y="510.0" width="16" height="16" rx="2" fill="#2d3142" stroke="#bfc0c0" />
 </g>
-<g data-node="AHT20"><rect x="40" y="312" width="224" height="80" rx="6" fill="#2d3142" stroke="#bfc0c0" stroke-width="1.1"/>
-<text x="56" y="330" fill="#bfc0c0" font-family="Geist Mono, Consolas, monospace" font-size="8" letter-spacing="1">SENSOR</text>
-<text x="56" y="352" fill="#f5f5f5" font-family="Geist, Arial, sans-serif" font-weight="600" font-size="12">AHT20</text>
-<text x="56" y="370" fill="#bfc0c0" font-family="Geist Mono, Consolas, monospace" font-size="9">Temperature / humidity</text>
+<g data-node="GD32E230">
+<rect x="448" y="280" width="320" height="224" rx="6" fill="#413d44" stroke="#f08a59" stroke-width="1.5"/>
+<text x="472" y="312" font-family="Geist, Arial, sans-serif" font-size="16" font-weight="600" fill="#f5f5f5">GD32E230</text>
+<text x="472" y="336" font-family="Geist Mono, Consolas, monospace" font-size="12" font-weight="400" fill="#bfc0c0">Measurement controller</text>
+<rect x="564.0" y="378.0" width="88" height="88" rx="4" fill="#2d3142" stroke="#f08a59" />
+<path d="M 554.0 392.6666666666667 H 564.0 M 652.0 392.6666666666667 H 662.0 M 578.6666666666666 368.0 V 378.0 M 578.6666666666666 466.0 V 476.0" fill="none" stroke="#f08a59" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 554.0 407.3333333333333 H 564.0 M 652.0 407.3333333333333 H 662.0 M 593.3333333333334 368.0 V 378.0 M 593.3333333333334 466.0 V 476.0" fill="none" stroke="#f08a59" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 554.0 422.0 H 564.0 M 652.0 422.0 H 662.0 M 608.0 368.0 V 378.0 M 608.0 466.0 V 476.0" fill="none" stroke="#f08a59" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 554.0 436.6666666666667 H 564.0 M 652.0 436.6666666666667 H 662.0 M 622.6666666666666 368.0 V 378.0 M 622.6666666666666 466.0 V 476.0" fill="none" stroke="#f08a59" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 554.0 451.3333333333333 H 564.0 M 652.0 451.3333333333333 H 662.0 M 637.3333333333334 368.0 V 378.0 M 637.3333333333334 466.0 V 476.0" fill="none" stroke="#f08a59" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+<rect x="576.0" y="390.0" width="64" height="64" rx="2" fill="#2d3142" stroke="#f08a59" />
 </g>
-<g data-node="GD32E230C8T6"><rect x="352" y="312" width="224" height="80" rx="6" fill="#413d44" stroke="#f08a59" stroke-width="1.8"/>
-<text x="368" y="330" fill="#f08a59" font-family="Geist Mono, Consolas, monospace" font-size="8" letter-spacing="1">CORE</text>
-<text x="368" y="352" fill="#f5f5f5" font-family="Geist, Arial, sans-serif" font-weight="600" font-size="12">GD32E230C8T6</text>
-<text x="368" y="370" fill="#bfc0c0" font-family="Geist Mono, Consolas, monospace" font-size="9">Control and measurement</text>
+<g data-node="OLED display">
+<rect x="888" y="212" width="344" height="160" rx="6" fill="#2d3142" stroke="#bfc0c0" stroke-width="1.5"/>
+<text x="912" y="244" font-family="Geist, Arial, sans-serif" font-size="16" font-weight="600" fill="#f5f5f5">OLED display</text>
+<text x="912" y="268" font-family="Geist Mono, Consolas, monospace" font-size="12" font-weight="400" fill="#bfc0c0">HS96L03W2C03</text>
+<rect x="920" y="288" width="280" height="68" rx="4" fill="#2d3142" stroke="#bfc0c0" />
+<path d="M 920 304 H 1200" fill="none" stroke="#bfc0c0" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="932" cy="296" r="2" fill="#bfc0c0"/>
+<circle cx="942" cy="296" r="2" fill="#bfc0c0"/>
+<circle cx="952" cy="296" r="2" fill="#bfc0c0"/>
+<path d="M 936 316 H 1176" fill="none" stroke="#bfc0c0" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 936 332 H 1144" fill="none" stroke="#bfc0c0" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
 </g>
-<g data-node="OLED module"><rect x="688" y="312" width="224" height="80" rx="6" fill="#2d3142" stroke="#bfc0c0" stroke-width="1.1"/>
-<text x="704" y="330" fill="#bfc0c0" font-family="Geist Mono, Consolas, monospace" font-size="8" letter-spacing="1">DISPLAY</text>
-<text x="704" y="352" fill="#f5f5f5" font-family="Geist, Arial, sans-serif" font-weight="600" font-size="12">OLED module</text>
-<text x="704" y="370" fill="#bfc0c0" font-family="Geist Mono, Consolas, monospace" font-size="9">HS96L03W2C03</text>
+<g data-node="Local interfaces">
+<rect x="888" y="432" width="344" height="128" rx="6" fill="#2d3142" stroke="#bfc0c0" stroke-width="1.5"/>
+<text x="912" y="464" font-family="Geist, Arial, sans-serif" font-size="16" font-weight="600" fill="#f5f5f5">Local interfaces</text>
+<text x="912" y="488" font-family="Geist Mono, Consolas, monospace" font-size="12" font-weight="400" fill="#bfc0c0">Buttons / buzzer / debug</text>
+<rect x="924.0" y="512" width="36" height="28" rx="3" fill="#2d3142" stroke="#bfc0c0" />
+<path d="M 936.0 522.0 H 948.0" fill="none" stroke="#bfc0c0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+<rect x="994.0" y="512" width="36" height="28" rx="3" fill="#2d3142" stroke="#bfc0c0" />
+<path d="M 1006.0 522.0 H 1018.0" fill="none" stroke="#bfc0c0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+<rect x="1064.0" y="512" width="36" height="28" rx="3" fill="#2d3142" stroke="#bfc0c0" />
+<path d="M 1076.0 522.0 H 1088.0" fill="none" stroke="#bfc0c0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+<rect x="1134.0" y="512" width="36" height="28" rx="3" fill="#2d3142" stroke="#bfc0c0" />
+<path d="M 1146.0 522.0 H 1158.0" fill="none" stroke="#bfc0c0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
 </g>
-<g data-node="Buttons and reset"><rect x="40" y="456" width="224" height="64" rx="6" fill="#2d3142" stroke="#bfc0c0" stroke-width="1.1"/>
-<text x="56" y="470" fill="#bfc0c0" font-family="Geist Mono, Consolas, monospace" font-size="8" letter-spacing="1">INPUT</text>
-<text x="56" y="492" fill="#f5f5f5" font-family="Geist, Arial, sans-serif" font-weight="600" font-size="12">Buttons and reset</text>
-<text x="56" y="510" fill="#bfc0c0" font-family="Geist Mono, Consolas, monospace" font-size="9">Local controls</text>
-</g>
-<g data-node="Debug header"><rect x="352" y="456" width="224" height="64" rx="6" fill="#2d3142" stroke="#bfc0c0" stroke-width="1.1"/>
-<text x="368" y="470" fill="#bfc0c0" font-family="Geist Mono, Consolas, monospace" font-size="8" letter-spacing="1">INTERFACE</text>
-<text x="368" y="492" fill="#f5f5f5" font-family="Geist, Arial, sans-serif" font-weight="600" font-size="12">Debug header</text>
-<text x="368" y="510" fill="#bfc0c0" font-family="Geist Mono, Consolas, monospace" font-size="9">Programming / debug</text>
-</g>
-<g data-node="Buzzer and LEDs"><rect x="688" y="456" width="224" height="64" rx="6" fill="#2d3142" stroke="#bfc0c0" stroke-width="1.1"/>
-<text x="704" y="470" fill="#bfc0c0" font-family="Geist Mono, Consolas, monospace" font-size="8" letter-spacing="1">OUTPUT</text>
-<text x="704" y="492" fill="#f5f5f5" font-family="Geist, Arial, sans-serif" font-weight="600" font-size="12">Buzzer and LEDs</text>
-<text x="704" y="510" fill="#bfc0c0" font-family="Geist Mono, Consolas, monospace" font-size="9">Audible / visual indication</text>
-</g>
-<line x1="40" y1="548" x2="920" y2="548" stroke="#bfc0c0" stroke-width="0.7"/>
-<text x="40" y="568" font-family="Geist, Arial, sans-serif" font-size="10" fill="#bfc0c0">Hardware design artifacts only. Firmware and measured sensor results are not included.</text>
-<text x="40" y="588" font-family="Geist Mono, Consolas, monospace" font-size="8" fill="#bfc0c0">ARROWS: DATA OR DEPENDENCY DIRECTION   /   SOURCE: REPOSITORY FILES</text>
+<text x="48" y="652" font-family="Geist, Arial, sans-serif" font-size="16" font-weight="400" fill="#f5f5f5">The repository contains schematic, PCB, BOM and design-reference artifacts.</text>
+<path d="M 48 676 H 1232" fill="none" stroke="#687080" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+<text x="48" y="700" font-family="Geist, Arial, sans-serif" font-size="12" font-weight="400" fill="#bfc0c0">Hardware architecture • firmware and measured sensor results are not included</text>
 </svg></div></main></body></html>
